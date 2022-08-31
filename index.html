@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas Neira</title>
+    <link rel="stylesheet" href="/PortafolioWebPage/assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg text-uppercase roun bg-nav fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-white m-0" href="#page-top">Nicolás Neira</a>
+      <button class="navbar-toggler" id="navbar-IconShadow" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list navIcon"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ">
+            <a class="nav-link text-white" aria-current="page" href="#about">Sobre Mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#portafolio">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header con imagen principa, foto perfil, h1 p -->
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col hero-img img-fluid p-0">
+              <div class="hero-perfil text-center m-0">
+                  <img class="hero-miImg mt-3 mb-3 shadow" src="/Heroimg/NicolasNeira.jpeg" alt="Foto Perfil">
+              </div>
+              <div class="hero-text">
+                <div class="col"><h1 class="mb-1">Nicolás Neira</h1></div>
+                <div class="col"><p class="mb-3">DESARROLLADOR FULLSTACK</p></div>
+                <div class="col">
+                  <button class="btn btn-light mb-4">
+                    <i class="bi bi-download"></i>
+                  CV</button>
+                </div>
+          </div>
+        </div>
+    </div>
+    </header>
+
+    <main>
+      <!-- seccion acerca de mi -->
+      <Section>
+        <div class="container">
+          <h1 class="section text-center">Sobre Mi</h1>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 m-0">
+              <p class="lead">
+                ¡Hola a todos! Soy Nicolás Neira. Titulado en electricidad y automatización industrial, Siempre he sido un apasionado con la tecnología y en especial con la programación. Por este motivo hace ya un tiempo que me anime a profundizar en este tema y a estudiar de forma autodidacta. En Mayo de 2022 realice el bootcamp de Generation para ser un desarrollador FullStack JAVA Jr. en el cual vimos distintos elementos de Frontend y Backend, base de datos con MYSQL, herramientas como GitHub,metodologías agiles SCRUM entre muchas otras cosas.
+              </p>
+            </div>
+            <div class="col-lg-4 m-0">
+              <p class="lead">Hoy en día busco mejorar mis habilidades continuamente y seguir creciendo profesionalmente.
+                Si estás interesado en trabajar conmigo o contratarme, puedes contactarme a través de LinkedIn o por el formulario al final de la página.
+                ¡Estoy emocionado de que creemos las aplicaciones del futuro!
+              </p>
+            </div>
+          </div>
+          <!-- icono y link -->
+          <div class="col text-center">
+                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/NicNeira">
+                  <i class="bi bi-github iconAbout"></i>
+                </a>
+
+                <a class="btn btn-outline-light btn-social mx-1" href="">
+                  <i class="bi bi-linkedin iconAbout"></i>
+                </a>
+          </div>
+        </div>
+      </Section>
+      <!-- seccion portafolio -->
+      <section>
+        <h1 class="portfolio text-center">Portafolio</h1>
+        <div class="container px-4">
+          <div class="row gx-3">
+            <div class="col-12 col-sm-4">
+              <figure class="p-0" data-bs-toggle="modal" data-bs-target="portfolioModal1">
+                <img class="ecotank img-fluid" src="/SectionPortfolio/PortafolioEcoTank.png" alt="">                
+                <div class="capa">
+                  <i class="bi bi-plus-lg plus"></i>
+                </div>
+              </figure>
+            </div>
+
+            <div class="col-12 col-sm-4">
+              <figure class="p-0">
+                <img class="ecotank " src="/SectionPortfolio/PortafolioEcoTank.png" alt="">
+                            
+                <div class="capa">
+                  <i class="bi bi-plus-lg plus"></i>
+                </div>
+              </figure>
+            </div>
+
+            <div class="col-12 col-sm-4">
+              <figure class="p-0">
+                <img class="ecotank " src="/SectionPortfolio/PortafolioEcoTank.png" alt="">
+                            
+                <div class="capa">
+                  <i class="bi bi-plus-lg plus"></i>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- seccion contacto -->
+      <section>
+        <div class="container mb-2">
+          <h1 class="text-center">Contacto</h1>
+          <form class="row g-3 needs-validation justify-content-center"
+          method="POST" id="formulario" novalidate autocomplete="off">
+              <div class="col-lg-8 col-xl-7">
+                  <!-- Nombre -->
+                  <div class="form-floating mb-3">
+                      <input
+                      type="text"
+                      name="nombre"
+                      class="form-control"
+                      id="nombre"
+                      placeholder="Nombre Apellido"
+                      required
+                      />
+  
+                      <label for="floatingInput validationCustom01" class="form-label"
+                      >Nombre</label
+                      >
+  
+                      <div class="invalid-feedback">El campo nombre es requerido.</div>
+                      <!-- <div class="valid-feedback">Looks good!</div> -->
+                  </div>
+  
+                  <!-- correo Electronico -->
+                  <div class="form-floating mb-3">
+                      <input
+                      type="email"
+                      name="correo"
+                      class="form-control"
+                      id="correo"
+                      placeholder="name@example.com"
+                      required
+                      />
+                      <!-- for="validationCustom para que se valide automaticamente con bootstrap" -->
+                      <label for="floatingInput validationCustom02" class="form-label"
+                      >Correo Electronico</label
+                      >
+  
+                      <!-- validacion -->
+                      <div class="invalid-feedback">Introduce un email valido.</div>
+                  </div>
+  
+                  <!-- Numero de telefono -->
+                  <div class="form-floating mb-3">
+                      <input
+                      type="text"
+                      name="phone"
+                      class="form-control"
+                      id="phone"
+                      placeholder="name@example.com"
+                      required
+                      />
+  
+                      <label for="floatingInput validationCustom03" class="form-label"
+                      >Numero de Telefono</label
+                      >
+                      <!-- validacion -->
+                      <div class="invalid-feedback">Introduce un numero de contacto.</div>
+                  </div>
+  
+                  <!-- Area de texto -->
+                  <div class="form-floating mb-3">
+                      <textarea
+                      class="form-control"
+                      name="message"
+                      id="message"
+                      rows="3"
+                      placeholder=" "
+                      required
+                      style="height: 10rem"
+                      ></textarea>
+  
+                      <label for="floatingInput validationCustom04" class="form-label"
+                      >Mensaje</label
+                      >
+                      <!-- validacion -->
+                      <div class="invalid-feedback">El mensaje es requerido.</div>
+                  </div>
+  
+                  <!-- boton enviar -->
+                      <div class="col mt-0 text-center">
+                          <button class="btn btn-primary" id="submitButton" type="button">
+                          Enviar
+                          </button>
+                      </div>
+              </div>
+          </form>
+      </div>
+      </section>
+      <!-- seccion Footer -->
+      <!-- position fixed bottom-0 para que siempre se mantenga abajo -->
+      <div class="container-fluid">
+          <footer class="row text-center bg-dark text-white py-4">
+              <small class="col-12 border-top-3">Copyright © Nicolas Neira 2022</small>
+          </footer>
+      </div>
+      <!-- Modal -->
+      <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EcoTank</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="/PortafolioWebPage/assets/img/PortafolioEcoTank.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Proyecto realizado con el legendario grupo2 de Generation en el cual desarrollamos una plataforma de IOT en donde abarcamos la toma e ingreso de datos fisicos de temperatura y humedad desde una Placa NodeMCU. Nuestra aplicacion WEB cuenta con ingreso de usuarios, registros en base de datos y validaciones, muestra de datos recoletactos de forma grafica con filtros de horas,dias, semanas </p>
+                                <button class="btn btn-danger " data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    
+    
+    <script src="/PortafolioWebPage/assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
