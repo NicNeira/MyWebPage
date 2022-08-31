@@ -21,7 +21,7 @@ main{
 
 /* la imagen hero */
 .hero-img{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/PortafolioWebPage/assets/img/fondoValpo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/fondoValpo.jpg");
 
     /* Seteamos una altura especifica */
     /* height: 400px; */
